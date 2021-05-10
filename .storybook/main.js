@@ -13,7 +13,7 @@ module.exports = {
       // add monorepo root as a valid directory to import modules from
       config.resolve.plugins.forEach((p) => {
         if (Array.isArray(p.appSrcs)) {
-          p.appSrcs.push(path.join(__dirname, '..', '..', '..', 'storybook'));
+          p.appSrcs.push(path.join(__dirname, '..', '..', '..', 'storybook-yarn-2'));
         }
       });
       return config;
